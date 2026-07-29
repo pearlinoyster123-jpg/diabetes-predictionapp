@@ -35,3 +35,42 @@ if st.button("Predict"):
         st.error("⚠️ Prediction: Has Sugar")
     else:
         st.success("✅ Prediction: No Sugar")
+st.markdown("""
+<style>
+
+.stApp{
+    background-color:#f4fbff;
+}
+
+h1{
+    color:#0d6efd;
+    text-align:center;
+}
+
+h2,h3{
+    color:#198754;
+}
+
+.stButton>button{
+    background-color:#198754;
+    color:white;
+    font-size:18px;
+    border-radius:12px;
+    height:55px;
+    width:100%;
+    font-weight:bold;
+}
+
+.stButton>button:hover{
+    background-color:#0f5132;
+    color:white;
+}
+
+div[data-testid="stNumberInput"]{
+    background-color:white;
+    border-radius:10px;
+    padding:8px;
+}
+
+</style>
+""", unsafe_allow_html=True)
