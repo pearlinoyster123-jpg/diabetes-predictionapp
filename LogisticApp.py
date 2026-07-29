@@ -74,3 +74,7 @@ div[data-testid="stNumberInput"]{
 
 </style>
 """, unsafe_allow_html=True)
+probability = model.predict_proba(input_data)
+
+st.write(f"Confidence: {probability.max()*100:.2f}%")
+st.progress(float(probability.max()))
