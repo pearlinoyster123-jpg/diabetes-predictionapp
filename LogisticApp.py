@@ -5,7 +5,10 @@ import pickle
 # Load trained model
 with open("diabetes_model.pkl", "rb") as file:
     model = pickle.load(file)
-
+st.image(
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Blue_circle_for_diabetes.svg/512px-Blue_circle_for_diabetes.svg.png",
+    width=150
+)
 st.set_page_config(page_title="Diabetes Prediction", page_icon="🩺")
 
 st.title("🩺 Diabetes Prediction System")
