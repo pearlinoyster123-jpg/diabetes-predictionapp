@@ -13,10 +13,10 @@ from PIL import Image
 
 logo = Image.open("logo.png")
 
-col1, col2 = st.columns([1, 5])
+col1, col2, col3 = st.columns([1,2,1])
 
-with col1:
-    st.image(logo, width=90)
+with col2:
+    st.image(logo, width=240)
 
 with col2:
     st.markdown("""
