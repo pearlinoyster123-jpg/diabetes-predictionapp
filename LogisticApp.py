@@ -147,11 +147,6 @@ st.sidebar.write("👩‍💻 Umme Ahmad")
 
 # ---------------- TITLE ---------------- #
 
-st.markdown('<div class="title">🩺 AI Diabetes Prediction System</div>', unsafe_allow_html=True)
-
-st.markdown(
-'<div class="subtitle">Early diabetes screening using Artificial Intelligence and Machine Learning</div>',
-unsafe_allow_html=True)
 
 # ---------------- INPUTS ---------------- #
 
