@@ -9,7 +9,24 @@ st.set_page_config(
     page_icon="🩺",
     layout="wide"
 )
+from PIL import Image
 
+logo = Image.open("logo.png")
+
+col1, col2 = st.columns([1, 5])
+
+with col1:
+    st.image(logo, width=90)
+
+with col2:
+    st.markdown("""
+    <h1 style='color:#0A4FA8;margin-bottom:0;'>
+    🩺 AI Diabetes Prediction System
+    </h1>
+    <p style='font-size:18px;color:gray;'>
+    Developed by <b>Umme Ahmad | AI Engineer</b>
+    </p>
+    """, unsafe_allow_html=True)
 # ---------------- LOAD MODEL ---------------- #
 
 with open("diabetes_model.pkl", "rb") as file:
