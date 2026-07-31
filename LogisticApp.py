@@ -1,4 +1,4 @@
-import streamlit as st
+Ahmadimport streamlit as st
 import pandas as pd
 import pickle
 
@@ -126,7 +126,7 @@ st.sidebar.warning("Accuracy\n\n77.21%")
 st.sidebar.markdown("---")
 
 st.sidebar.write("### Developed By")
-st.sidebar.write("👩‍💻 Sobia Shahzad")
+st.sidebar.write("👩‍💻 Umme Ahmad")
 
 # ---------------- TITLE ---------------- #
 
