@@ -13,31 +13,19 @@ from PIL import Image
 
 logo = Image.open("logo.png")
 
-col1, col2, col3 = st.columns([1,2,1])
+# Center logo
+st.image(logo, width=220)
 
-with col2:
-    st.image(logo, width=240)
+# Center title and subtitle
+st.markdown("""
+<h1 style="text-align:center; color:#0A4FA8; font-size:42px; margin-bottom:0;">
+🩺 AI Diabetes Prediction System
+</h1>
 
-with col2:
-    st.markdown("""
-    <h1 style="
-        color:#0A4FA8;
-        margin-bottom:0;
-        white-space: nowrap;
-        font-size:42px;
-        font-weight:bold;
-    ">
-        🩺 AI Diabetes Prediction System
-    </h1>
-
-    <p style="
-        font-size:18px;
-        color:gray;
-        margin-top:5px;
-    ">
-        Developed by <b>Umme Ahmad | AI Engineer</b>
-    </p>
-    """, unsafe_allow_html=True)
+<p style="text-align:center; color:gray; font-size:20px; margin-top:5px;">
+Developed by <b>Umme Ahmad</b> | AI Engineer
+</p>
+""", unsafe_allow_html=True)
 # ---------------- LOAD MODEL ---------------- #
 
 with open("diabetes_model.pkl", "rb") as file:
