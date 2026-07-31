@@ -20,11 +20,22 @@ with col2:
 
 with col2:
     st.markdown("""
-    <h1 style='color:#0A4FA8;margin-bottom:0;'>
-    🩺 AI Diabetes Prediction System
+    <h1 style="
+        color:#0A4FA8;
+        margin-bottom:0;
+        white-space: nowrap;
+        font-size:42px;
+        font-weight:bold;
+    ">
+        🩺 AI Diabetes Prediction System
     </h1>
-    <p style='font-size:18px;color:gray;'>
-    Developed by <b>Umme Ahmad | AI Engineer</b>
+
+    <p style="
+        font-size:18px;
+        color:gray;
+        margin-top:5px;
+    ">
+        Developed by <b>Umme Ahmad | AI Engineer</b>
     </p>
     """, unsafe_allow_html=True)
 # ---------------- LOAD MODEL ---------------- #
